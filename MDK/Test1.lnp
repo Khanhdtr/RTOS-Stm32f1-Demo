@@ -1,0 +1,20 @@
+--cpu Cortex-M3
+".\main.o"
+".\port_mangger.o"
+".\hm10.o"
+".\stm32f10x_it.o"
+".\stm32f10x_gpio.o"
+".\stm32f10x_rcc.o"
+".\misc.o"
+".\stm32f10x_usart.o"
+".\core_cm3.o"
+".\system_stm32f10x.o"
+".\startup_stm32f10x_md.o"
+".\list.o"
+".\queue.o"
+".\tasks.o"
+".\port.o"
+".\heap_2.o"
+--ro-base 0x08000000 --entry 0x08000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Test1.map" -o .\Test1.axf
